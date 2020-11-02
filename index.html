@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="burger.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="nav-wrapper" id="topNav">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Главная</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="poemlist.html">Стихи</a>
+        </div>
+        <div class="nav-link-wrapper">
+          <a href="#about-me">Обо мне</a>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="brand">
+          Juliette in Wonderland
+        </div>
+      </div>
+
+
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <div class="burger-container" onclick="toggleBurger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </div>
+    <div class="header-image-wrapper"></div>
+
+    <div class="profile-content-wrapper">
+      <div class="header-profile">Юлия Игоревна Демченко.</div>
+      <div class="text-wrapper-profile">
+        <p style="text-align: center">
+          Иногда кажется мне, что всё-то на свете уже сказано, и любые строки есть вариация на тему чьих-то,
+          уже когда-то ранее сказанных строк, но душе не прикажешь ведь, и даже во время этой глубокой,
+          обволакивающей сердце тишины, вдруг слышатся новые рифмы.
+        </p>
+      </div>
+    </div>
+
+    <div id="about-me" class="section-wrapper">
+      <div class="section">
+        <div class="section-image" style="background-image: url(images/profile1.jpg);">
+        </div>
+
+        <div class="section-text-right">
+          <h2>Поэтесса. Барышня-крестьянка. Автор сборника "Послание душе".</h2>
+          <p>
+            Ароматный утренний кофе прогнал остатки сна, а с ним растворились добрые феи, сказочные принцессы,
+            маленькие, неуклюжие тролли, трудяги-эльфы, невероятные, неведомые зверюшки и другой затейный лесной
+            народ, так чудно рисовавший в моем воображении осенние сказки со счастливым концом.
+            <br /><br />
+            Пора возвращаться в реальный мир, но кто же точно скажет мне, что такое в действительности есть реальность?
+            Кто решает какою ей быть?
+            <br /><br />
+            Вдруг, если повнимательнее присмотреться и получше поискать где-то там на полке среди скляночек с
+            ароматным
+            кофе и чаем, корицей и душистыми летними травами или среди стопки залежавшихся прочитанных книг на
+            прикроватной тумбочке, вдруг именно где-то там можно заметить в действительности настоящую
+            добрую-добрую
+            фею, готовую однажды по мановению своей волшебной палочки на мгновение вернуть нас в тот далекий и
+            такой
+            близкий сердцу мир, так похожий на детство, где беззаботно, где тепло, где чудеса...<br />
+            <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-divider"></div>
+
+    <div class="section-wrapper">
+      <div class="section">
+        <div class="section-text-left">
+          <h2>Стихи.</h2>
+          <div style="display: flex">
+            <p>Под золотою клёна сенью<br />
+              Притих мой старый, добрый дом,<br />
+              Изнежен радостью и ленью,<br />
+              Согрет любви большим теплом.</p>
+
+            <p style="padding-left: 30px">С утра блинов дымок виется,<br />
+              По плошкам сливки, липы мёд<br />
+              И будто рядом где-то детство<br />
+              Со мной босо к столу идёт...</p>
+          </div>
+          <br />
+          <a class="button-read-more" href="poemlist.html">Читать дальше</a>
+        </div>
+        <div class="section-image" style="background-image: url(images/portfolio1.jpg);"></div>
+      </div>
+    </div>
+
+    <div class="section-wrapper" style="padding-top: 0px;">
+      <div class="section">
+        <div class="section-image" style="background-image: url(images/winter4.jpg);"></div>
+        <div class="section-text-right">
+          <h2>Ранняя поэзия.</h2>
+          <div style="display: flex">
+            <p>Какое солнечное утро!<br />
+              Какой чарующий мороз!<br />
+              Играет небо перламутром,<br />
+              Рождая в мыслях всплески грёз.<br />
+
+            <p style="padding-left: 30px"> Скрипит трескучий под ногою<br />
+              Зимы посланник – белый снег,<br />
+              И лёд сковал ручьи собою,<br />
+              Остановив их резвый бег....</p>
+          </div>
+          <br />
+          <a class="button-read-more" href="poemlist.html">Читать дальше</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Свяжитесь со мной в
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Facebook</a>
+        </span>
+        ,
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">VK</a>
+        </span>
+        ,
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Instagram</a>
+        </span>
+      </p>
+
+      <div class="footer-section">
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Общие положения</a>
+        </span>
+        &nbsp;•&nbsp;
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Политика обработки персональных данных</a>
+        </span>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script>
+  function toggleNav() {
+    var x = document.getElementById("topNav");
+    if (x.className === "nav-wrapper") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-wrapper";
+    }
+  }
+
+  function toggleBurger(x) {
+    x.classList.toggle("change");
+  }
+</script>
+
+</html>

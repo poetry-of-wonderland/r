@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="burger.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="nav-wrapper" id="topNav">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Главная</a>
+        </div>
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="poemlist.html">Стихи</a>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="brand">
+          Juliette in Wonderland
+        </div>
+      </div>
+
+
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <div class="burger-container" onclick="toggleBurger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-content-wrapper">
+        <h3>Октябрь</h3>
+        <p>
+          Тихое утро. Октябрь ненастный<br />
+          Гонит последний листок,<br />
+          Ветер холодный по улицам праздно<br />
+          Носится. Тонкий крючок<br />
+          Бережно в пальцах держу и в окошко<br />
+          Робко сегодня гляжу,<br />
+          Осень любимая. Грустно немножко.<br />
+          Что же я в ней нахожу?<br />
+          Русскую долю и что-то родное,<br />
+          То что поэт наш любил,<br />
+          Небо с огромной, прекрасной душою,<br />
+          То, что нам Бог подарил.<br />
+          Пестрые краски, морозные ночи,<br />
+          Краткие, скромные дни,<br />
+          Время мечтаний, когда очень-очень<br />
+          Просятся в душу они.<br />
+          Дождик, стучащий по крыше усталой,<br />
+          Плачь в небесах журавлей,<br />
+          В капельке каждой, в травинушке малой<br />
+          Благость для жизни моей.<br />
+          Лес засыпающий в дымке туманной,<br />
+          Запах увядших дубрав,<br />
+          Лета бумажный ковертик желанный,<br />
+          Пахнущий сборами трав.<br />
+          Время уюта, чтоб рядом с тобою<br />
+          Было родное плечо,<br />
+          Чтобы улыбки и речи рекою,<br />
+          Чтобы любил горячо.<br />
+          Рада всему, а в ответ всё мне радо,<br />
+          Радостен день мой земной,<br />
+          Больше душе ничего и не надо.<br />
+          Вот мой октябрь какой!<br />
+          <br />
+        </p>
+        <br /><br />
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Свяжитесь со мной в
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Facebook</a>
+        </span>
+        ,
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">VK</a>
+        </span>
+        ,
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Instagram</a>
+        </span>
+      </p>
+
+      <div class="footer-section">
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Общие положения</a>
+        </span>
+        &nbsp;•&nbsp;
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Политика обработки персональных данных</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleNav() {
+      var x = document.getElementById("topNav");
+      if (x.className === "nav-wrapper") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav-wrapper";
+      }
+    }
+
+    function toggleBurger(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+
+</body>
+
+</html>

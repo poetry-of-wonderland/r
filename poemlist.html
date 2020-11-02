@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="burger.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="nav-wrapper" id="topNav">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Главная</a>
+        </div>
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="poemlist.html">Стихи</a>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="brand">
+          Juliette in Wonderland
+        </div>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <div class="burger-container" onclick="toggleBurger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="header-image-poemlist"></div>
+
+    <div class="content-wrapper">
+      <div class="poemlist-content-wrapper">
+        <h2>Список стихотворений </h2>
+        <ul>
+          <li class="list-item-wrapper">
+            <a class="list-link" href="portfolio1.html">Благодатные дни настали</a>
+          </li>
+          <li class="list-item-wrapper">
+            <a class="list-link" href="portfolio2.html">Под золотою клёна сенью</a>
+          </li>
+          <li class="list-item-wrapper">
+            <a class="list-link" href="portfolio3.html">Октябрь</a>
+          </li>
+          <li class="list-item-wrapper">
+            Друзья!
+          </li>
+          <li class="list-item-wrapper">
+            В день рождения
+          </li>
+          <li class="list-item-wrapper">
+            Приди, златая!
+          </li>
+          <li class="list-item-wrapper">
+            Рассвет на небе золотится...
+          </li>
+          <li class="list-item-wrapper">
+            По пути Творца
+          </li>
+          <li class="list-item-wrapper">
+            Я плету свою тихую повесть...
+          </li>
+          <li class="list-item-wrapper">
+            Осенних дней мотаю пряжу...
+          </li>
+          <li class="list-item-wrapper">
+            Что ни день, то дорога в гору...
+          </li>
+          <li class="list-item-wrapper">
+            Отринь сомнения пустые...
+          </li>
+          <li class="list-item-wrapper">
+            Открыта осени страница
+          </li>
+          <li class="list-item-wrapper">
+            Вечер лета
+          </li>
+          <li class="list-item-wrapper">
+            Луна
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Свяжитесь со мной в
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Facebook</a>
+        </span>
+        ,
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">VK</a>
+        </span>
+        ,
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Instagram</a>
+        </span>
+      </p>
+
+      <div class="footer-section">
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Общие положения</a>
+        </span>
+        &nbsp;•&nbsp;
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Политика обработки персональных данных</a>
+        </span>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    function toggleNav() {
+      var x = document.getElementById("topNav");
+      if (x.className === "nav-wrapper") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav-wrapper";
+      }
+    }
+
+    function toggleBurger(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+
+</body>
+
+</html>

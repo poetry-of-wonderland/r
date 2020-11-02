@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="burger.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="nav-wrapper" id="topNav">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Главная</a>
+        </div>
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="poemlist.html">Стихи</a>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="brand">
+          Juliette in Wonderland
+        </div>
+      </div>
+
+
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <div class="burger-container" onclick="toggleBurger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-content-wrapper">
+        <h3>Под золотою клёна сенью</h3>
+        <p> Под золотою клёна сенью<br />
+          Притих мой старый, добрый дом,<br />
+          Изнежен радостью и ленью,<br />
+          Согрет любви большим теплом.<br />
+          С утра блинов дымок виется,<br />
+          По плошкам сливки, липы мёд<br />
+          И будто рядом где-то детство<br />
+          Со мной босо к столу идёт.<br />
+          Глядит наивно из-под чёлки<br />
+          И тычет пальчиком в стекло-<br />
+          Упали с лиственниц иголки,<br />
+          И небо с тучи протекло.<br />
+          Побудем дома, книжку с полки,<br />
+          Открыв, найдем сухой цветок,<br />
+          И удивляясь, из-под чёлки,<br />
+          Отыщем лето между строк.<br />
+          Так хорошо, садись поближе,<br />
+          Хоть время нам не удержать,<br />
+          Зато даровано нам свыше<br />
+          Любить и верить и мечтать.<br />
+          <br />
+        </p>
+        <br /><br />
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Свяжитесь со мной в
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Facebook</a>
+        </span>
+        ,
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">VK</a>
+        </span>
+        ,
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Instagram</a>
+        </span>
+      </p>
+
+      <div class="footer-section">
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Общие положения</a>
+        </span>
+        &nbsp;•&nbsp;
+        <span class="footer-link-wrapper">
+          <a class="footer-link" href="index.html">Политика обработки персональных данных</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleNav() {
+      var x = document.getElementById("topNav");
+      if (x.className === "nav-wrapper") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav-wrapper";
+      }
+    }
+
+    function toggleBurger(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+
+</body>
+
+</html>
